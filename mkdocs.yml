@@ -1,0 +1,64 @@
+site_name: astro-inject
+site_description: Inject synthetic artifacts into astronomical images for ML training and pipeline evaluation.
+site_url: https://unstreak-lab.github.io/astro-inject/
+repo_url: https://github.com/unstreak-lab/astro-inject
+repo_name: unstreak-lab/astro-inject
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Design: design/astro-inject.md
+  - Decisions:
+      - Template: decisions/000-template.md
+  - Recon: recon/README.md
+  - References: references.md
+  - Tutorials:
+      - Hello world: tutorials/01_hello_world.ipynb
