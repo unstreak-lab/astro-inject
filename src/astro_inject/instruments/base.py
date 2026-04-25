@@ -17,14 +17,14 @@ class Instrument(Protocol):
     @property
     def pixel_scale(self) -> float:
         """Pixel scale in arcseconds per pixel."""
-        ...
+        ...  # pragma: no cover
 
     @property
     def psf_fwhm(self) -> float:
         """Approximate PSF FWHM in pixels."""
-        ...
+        ...  # pragma: no cover
 
     @property
     def gain(self) -> float:
         """Detector gain in electrons per ADU."""
-        ...
+        ...  # pragma: no cover
