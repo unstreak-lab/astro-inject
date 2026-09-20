@@ -1,0 +1,1 @@
+A2 — fresh venv, install, run pytest + ruff + mypy
