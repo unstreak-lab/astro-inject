@@ -5,9 +5,9 @@ NEXT.md with the next unchecked task. One task per session is a win.
 
 ## A. Restart (all ⚡)
 
-- [ ] A1 ⚡ Create NEXT.md (one line: current task) and docs/ideas.md
+- [x] A1 ⚡ Create NEXT.md (one line: current task) and docs/ideas.md
       (park Ashish's sky-app + streaks idea, 2 sentences). Commit.
-- [ ] A2 ⚡ Fresh venv, `pip install -e ".[dev,docs]"`, run pytest +
+- [x] A2 ⚡ Fresh venv, `pip install -e ".[dev,docs]"`, run pytest +
       ruff + mypy. Note any breakage in the journal; fix or flag.
 - [ ] A3 ⚡ Run hello-world notebook top to bottom. Confirm the image
       renders. One journal line: what plot_image() does and why asinh.
