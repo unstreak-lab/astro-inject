@@ -9,9 +9,9 @@ NEXT.md with the next unchecked task. One task per session is a win.
       (park Ashish's sky-app + streaks idea, 2 sentences). Commit.
 - [x] A2 ⚡ Fresh venv, `pip install -e ".[dev,docs]"`, run pytest +
       ruff + mypy. Note any breakage in the journal; fix or flag.
-- [ ] A3 ⚡ Run hello-world notebook top to bottom. Confirm the image
+- [x] A3 ⚡ Run hello-world notebook top to bottom. Confirm the image
       renders. One journal line: what plot_image() does and why asinh.
-- [ ] A4 ⚡ Re-read your recon takeaways (the 4 ASTRiDE failure modes).
+- [x] A4 ⚡ Re-read your recon takeaways (the 4 ASTRiDE failure modes).
       Journal: which of the four you still remember unprompted.
 - [ ] A5 ⚡ If PROJECT_PLAN.md / design doc are still placeholders,
       paste in the real content. Commit.

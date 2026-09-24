@@ -1,3 +1,3 @@
 
-A3 ⚡ Run hello-world notebook top to bottom. Confirm the image
-    renders. One journal line: what plot_image() does and why asinh.
+A5 ⚡ If PROJECT_PLAN.md / design doc are still placeholders,
+      paste in the real content. Commit.

@@ -74,7 +74,7 @@ DOI will be issued at the first tagged release; until then, please use:
 ```bash
 git clone https://github.com/unstreak-lab/astro-inject.git
 cd astro-inject
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev,docs]"
 pre-commit install
 ```
