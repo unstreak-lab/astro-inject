@@ -11,3 +11,7 @@ added here once that notebook is ready to share.
 
 For the published, runnable hello-world, see
 [`tutorials/01_hello_world.ipynb`](../tutorials/01_hello_world.ipynb).
+
+To re-run recon.ipynb, use the original ASTRiDE environment
+(Python 3.13, with astride, scikit-image, pandas installed),
+not the astro-inject dev venv.
