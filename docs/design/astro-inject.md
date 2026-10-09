@@ -95,8 +95,19 @@ in `astro_inject.instruments.*`.
 Spectral regime (optical, IR) and and instrument (a specific camera + telescope) are separate axes.
 The instrument model/object supplies the properties - zero point, pixel scale, sky, gain, bandpass.
 The spectral regime determines how the satellite produces light: reflected sunlight (dominates in optical)
- or thermal emission (in mid-IR).
+or thermal emission (in mid-IR).
 
+The injection engine is band-agnostic. Trail brightness is always an apparent magnitude in the instrument's
+bandpass. And the engine converts it to counts using the instrumnet's zero point. Optical constants are not
+hardcoded.
+
+V1-scope:
+- Validated on optical data (MeerLICHT, ASTA trails)
+- Near IR is not precluded, but unvalidated until a near-IR instrument is added. Planned as the second instrument.
+- Sooner in V1 if IR validation data is available.
+Out of scope:
+- Satellite thermal emission
+- Predicting the satellite brightness, given the satellite.
 
 ## Decisions to make in week 1
 

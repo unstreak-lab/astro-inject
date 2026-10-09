@@ -18,3 +18,8 @@ Gain
     Photos to pixel value, gain of the instrument.
 Nominal value
     Spec sheet default.
+albedo
+    How reflective a surface is at each wavelength
+phase angle
+    The angle the satellite, sun and you make. Will determine brightness
+    among other things.
