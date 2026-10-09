@@ -8,17 +8,17 @@ description = "Inject synthetic artifacts into astronomical images for ML traini
 readme = "README.md"
 license = { text = "Apache-2.0" }
 authors = [{ name = "astro-inject contributors" }]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 keywords = ["astronomy", "astropy", "fits", "synthetic-data", "machine-learning"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering :: Astronomy",
 ]
 dependencies = [
@@ -96,7 +96,7 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.11"  # was "3.10"; numpy's stubs use PEP 695 syntax
 strict = true
 warn_unused_configs = true
 warn_redundant_casts = true

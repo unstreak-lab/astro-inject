@@ -108,11 +108,11 @@ steady-state bug fixes and community support.
 - All three packages on PyPI with semantic versioning
 - arXiv preprint
 - ≥3 instruments supported in `astro-inject`
-- ≥10 GitHub stars (weak signal but non-zero)
+- Some GitHub stars as an indication of interest and direction. (weak signal but non-zero)
 
 ### v2 (12 months from start)
-- ≥100 PyPI downloads per month sustained
-- ≥1 external citation
+- A reasonable number of PyPI downloads per month
+- ≥1 external citation as an indicator of usefulness
 - ≥2 artifact types in `astro-inject`
 - ≥1 external contributor
 

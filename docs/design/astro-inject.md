@@ -33,7 +33,7 @@ trail = ai.trails.TrailParameters(
     start_dec=2.3 * u.deg,
     angular_velocity=0.5 * u.deg / u.s,
     exposure_time=30 * u.s,
-    apparent_magnitude=7.5 * u.mag,
+    apparent_magnitude=7.5 * u.mag, # in the observation bandpass; the Instrument defines the band.
     position_angle=45 * u.deg,
 )
 
@@ -82,7 +82,13 @@ methods.
 
 Protocol specifying the minimum information needed to inject artifacts
 into an instrument's data: pixel scale, PSF model, detector response,
-filter bandpass. Concrete implementations live in `astro_inject.instruments.*`.
+and the photometric context of the observation — filter bandpass,
+photometric zero point, and typical sky background. The bandpass is
+what makes an `apparent_magnitude` meaningful: magnitudes are always
+interpreted in the instrument's band, which is what keeps the
+injection engine band-agnostic (optical vs. IR is a property of the
+instrument model, not of the engine). Concrete implementations live
+in `astro_inject.instruments.*`.
 
 ## Decisions to make in week 1
 
@@ -149,5 +155,5 @@ year but I can't reproduce now" failures.
 
 **Coadd-systematic metric.**
 Family of pixel-space residual statistics plus
-a power-spectrum check at trail frequencies. Precise mathematical form 
+a power-spectrum check at trail frequencies. Precise mathematical form
 to be specified in Phase 3 once injection and stacking pipelines are real.

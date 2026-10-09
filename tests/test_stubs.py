@@ -9,6 +9,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 from astropy.nddata import CCDData
+from astropy.units import Quantity
 
 from astro_inject.composition import inject
 from astro_inject.instruments import Instrument
@@ -57,15 +58,27 @@ def test_instrument_protocol_runtime_check_rejects_plain_object() -> None:
 def test_instrument_protocol_runtime_check_accepts_duck_type() -> None:
     class _Duck:
         @property
-        def pixel_scale(self) -> float:
+        def pixel_scale(self) -> Quantity:
             return 0.1
 
         @property
-        def psf_fwhm(self) -> float:
+        def psf_fwhm(self) -> Quantity:
             return 2.0
 
         @property
-        def gain(self) -> float:
+        def gain(self) -> Quantity:
             return 1.5
+
+        @property
+        def bandpass(self) -> str:
+            return "V"
+
+        @property
+        def zero_point(self) -> Quantity:
+            return 25.0
+
+        @property
+        def sky_background(self) -> Quantity:
+            return 21.0
 
     assert isinstance(_Duck(), Instrument)

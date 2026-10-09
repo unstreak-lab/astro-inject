@@ -1,5 +1,9 @@
 # Learning journal
 
+## 2026-09-25
+mypy's python_version setting controls what syntax it accepts everywhere,
+including third-party stubs. Learned my venv silently used 3.14."
+
 ## 2026-09-23
 Why asinh stretch - linear and logarithmic to preserve image being
 washed out by bright pixels. Asinh behaves linearly for faint values
@@ -18,7 +22,7 @@ Failure modes for ASTRiDE:
 1. What is line hypothesis (Hough transform)
 
 What a tool can do differently
-1. Detect wings - start from a line hypothesis 
+1. Detect wings - start from a line hypothesis
 2. + Radial growth till you hit background for wings
 3. Link colinear fragments
 4. Understand bleed trails and spikes.
