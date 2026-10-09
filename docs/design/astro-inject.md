@@ -33,7 +33,7 @@ trail = ai.trails.TrailParameters(
     start_dec=2.3 * u.deg,
     angular_velocity=0.5 * u.deg / u.s,
     exposure_time=30 * u.s,
-    apparent_magnitude=7.5 * u.mag,  # in the observation bandpass; the Instrument defines the band.
+    apparent_magnitude=7.5 * u.mag,  # in the observation bandpass; the Instrument defines the band, Ashish comments about IR/visible.
     position_angle=45 * u.deg,
 )
 
@@ -89,6 +89,14 @@ interpreted in the instrument's band, which is what keeps the
 injection engine band-agnostic (optical vs. IR is a property of the
 instrument model, not of the engine). Concrete implementations live
 in `astro_inject.instruments.*`.
+
+### Spectral regime vs. instrument
+
+Spectral regime (optical, IR) and and instrument (a specific camera + telescope) are separate axes.
+The instrument model/object supplies the properties - zero point, pixel scale, sky, gain, bandpass.
+The spectral regime determines how the satellite produces light: reflected sunlight (dominates in optical)
+ or thermal emission (in mid-IR).
+
 
 ## Decisions to make in week 1
 

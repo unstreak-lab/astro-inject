@@ -1,0 +1,3 @@
+- Floor follows astropy.
+- CI checks from floor to newest (3.11 to 3.14 as of writing this).
+- Development happens on the floor version (3.11 as of writing this).
