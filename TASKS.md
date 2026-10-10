@@ -13,9 +13,9 @@ NEXT.md with the next unchecked task. One task per session is a win.
       renders. One journal line: what plot_image() does and why asinh.
 - [x] A4 ⚡ Re-read your recon takeaways (the 4 ASTRiDE failure modes).
       Journal: which of the four you still remember unprompted.
-- [ ] A5 ⚡ If PROJECT_PLAN.md / design doc are still placeholders,
+- [x] A5 ⚡ If PROJECT_PLAN.md / design doc are still placeholders,
       paste in the real content. Commit.
-- [ ] A6 ⚡ Design doc: add "trail brightness model parameterized by
+- [x] A6 ⚡ Design doc: add "trail brightness model parameterized by
       bandpass; v1 = optical, spectral dimension reserved (per Ashish,
       IR surveys like Gattini-IR/WINTER)." Add Gattini-IR + WINTER
       links to docs/references.md. Commit.
