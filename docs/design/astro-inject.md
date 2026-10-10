@@ -33,7 +33,7 @@ trail = ai.trails.TrailParameters(
     start_dec=2.3 * u.deg,
     angular_velocity=0.5 * u.deg / u.s,
     exposure_time=30 * u.s,
-    apparent_magnitude=7.5 * u.mag,  # in the observation bandpass; the Instrument defines the band, Ashish comments about IR/visible.
+    apparent_magnitude=7.5 * u.mag,  # in the observation bandpass; the Instrument defines the band
     position_angle=45 * u.deg,
 )
 
