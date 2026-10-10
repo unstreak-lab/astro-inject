@@ -100,7 +100,9 @@ Preprint, PyPI releases, public announcement.
 ### Phase 6: Maintenance and growth (months 5–12)
 
 Second instrument in month 6, cosmic-ray injection in month 9, plus
-steady-state bug fixes and community support.
+steady-state bug fixes and community support. We will add a near-IR
+survey instrument like Gattini-IR or WINTER instead of a visual instrument
+to allow for the phase II of non-optical bandpass Instrumnet physics.
 
 ## Success metrics
 

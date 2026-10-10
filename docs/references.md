@@ -38,6 +38,29 @@
   https://github.com/jijup/SatStreaks
   — Largest annotated real-image dataset (3,130 images).
 
+## Synthetic training data and noise modeling
+
+- Liu, S., Ge, X., Gu, Z., et al. (incl. Harada, T.) 2026.
+  "Denoising the Deep Sky: Physics-Based CCD Noise Formation for
+  Astronomical Imaging." ECCV 2026. arXiv:2601.23276.
+  https://arxiv.org/abs/2601.23276
+  Code: https://github.com/ShuhongLL/Denoising-Deep-Sky
+— Physics-based synthesis of CCD detector noise (shot noise, pixel
+    response variation, dark current, readout, cosmic rays, hot pixels)
+    to build paired training data for denoising. Trained/tested on
+    MuSCAT-3/4 data.
+  — Why it matters to us:
+    1. Validates our paradigm: physics-based synthesis to work around
+       scarce paired real data. Cite in our intro.
+    2. Complementary, not competing: they model the detector's noise,
+       we inject external artifacts (trails). Their noise model could
+       be a realistic detector layer on top of our injections.
+    3. Technique to borrow: stacking many exposures into high-SNR
+       "clean" base images, one source of clean backgrounds for us.
+    4. Overlap to revisit in year 2: they model cosmic rays, our
+       planned second artifact type.
+  — Notes: docs/learning/liu2026.md
+
 ## Packaging precedents
 
 - Medford, M. S. et al. 2022. "Removing Atmospheric Fringes from Zwicky Transient Facility i-Band Images using PCA." https://arxiv.org/abs/2102.10738
@@ -56,6 +79,8 @@
 - MeerLICHT: https://www.meerlicht.org/
 - ZTF: https://www.ztf.caltech.edu/
 - HST ACS/WFC: https://www.stsci.edu/hst/instrumentation/acs
+- Gattini-IR: https://sites.astro.caltech.edu/~mansi/gattini/
+- WINTER: https://www.daniellefrostig.com/research/winter
 
 ## Tool ecosystem to know
 

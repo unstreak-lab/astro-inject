@@ -88,7 +88,10 @@ what makes an `apparent_magnitude` meaningful: magnitudes are always
 interpreted in the instrument's band, which is what keeps the
 injection engine band-agnostic (optical vs. IR is a property of the
 instrument model, not of the engine). Concrete implementations live
-in `astro_inject.instruments.*`.
+in `astro_inject.instruments.*`. The psf_fwhm and sky_background are
+defaults, when available, per-image values will be used. To avoid wrong
+physics, we will look at the FITS header, and if it disagrees with the
+Instrument, we will fail rather than silently adding the wrong trails.
 
 ### Spectral regime vs. instrument
 
