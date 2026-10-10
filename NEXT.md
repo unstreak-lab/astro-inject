@@ -1,3 +1,3 @@
 
-A5 ⚡ If PROJECT_PLAN.md / design doc are still placeholders,
-      paste in the real content. Commit.
+B1 ⚡ Cell 1: imports; load one recon FITS file; markdown on
+      where it came from.
